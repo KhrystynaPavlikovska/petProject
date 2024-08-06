@@ -1,0 +1,20 @@
+{
+  "name": "petproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cypress/grep": "^4.0.1",
+    "@mmisty/cypress-allure-adapter": "^0.16.4",
+    "allure-commandline": "^2.27.0",
+    "cypress": "^13.8.1",
+    "eslint": "8.1.0",
+    "eslint-plugin-cypress": "^2.12.1"
+}
+}
