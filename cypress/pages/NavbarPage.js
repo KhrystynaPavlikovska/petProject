@@ -1,31 +1,40 @@
-class NavbarPage {
-    // Selectors
-    get logo() { return cy.get('.header__logo'); }
-    get catalogButton() { return cy.get('.header__catalog-btn'); }
-    get searchButton() { return cy.get('.header__search'); }
-    get deliveryAddress() { return cy.get('.header__delivery'); }
-    get profileButton() { return cy.get('.header__profile'); }
+export class NavbarPage {
 
-    // Methods for assertions
+    elements = {
+        getLogo: () => cy.get('.header__logo'),
+        getCatalogButton: () => cy.get('.header__catalog-btn'),
+        getSearchButton: () => cy.get('.header__search'),
+        getDeliveryAddress: () => cy.get('.header__delivery'),
+        getProfileButton: () => cy.get('.header__profile')
+    };
+    
+    
+    
     assertLogoVisible() {
-        this.logo.should('be.visible');
+        this.elements.getLogo()
+        .should('be.visible');
     }
-
+    
     assertCatalogButtonVisible() {
-        this.catalogButton.should('be.visible');
+        this.elements.getCatalogButton()
+        .should('be.visible');
     }
-
+    
     assertSearchButtonVisible() {
-        this.searchButton.should('be.visible');
+        this.elements.getSearchButton()
+        .should('be.visible');
     }
-
+    
     assertDeliveryAddressVisible() {
-        this.deliveryAddress.should('be.visible');
+        this.elements.getDeliveryAddress()
+        .should('be.visible');
     }
-
+    
     assertProfileButtonVisible() {
-        this.profileButton.should('be.visible');
+        this.elements.getProfileButton()
+        .should('be.visible');
     }
 }
 
-export default new NavbarPage();
+export const NewNavbarPage = new NavbarPage();
+
