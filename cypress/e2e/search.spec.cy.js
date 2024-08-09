@@ -4,17 +4,16 @@ describe("All products ", () => {
     });
 
 it("should find search field", () => {
-    //cy.get('.header__search').click().type('хліб')
     cy.get(".header__search")
         .should("be.visible") 
         .click();
+
+    cy.get(".ng-pristine") 
+        // .should("be.visible")
+        // .wait(500)
+        .click()
+        .type("хліб");
+        
     });
 
-it("should click to search field", () => {
-    cy.get(".search-input__container") 
-        .click() 
-        .type("хліб"); 
-
-});
-
-});
+})

@@ -1,4 +1,3 @@
-// cypress/pages/NavbarPage.js
 class NavbarPage {
     // Selectors
     get logo() { return cy.get('.header__logo'); }

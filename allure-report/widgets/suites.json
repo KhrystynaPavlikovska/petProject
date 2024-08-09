@@ -1,1 +1,1 @@
-{"total":0,"items":[]}
+{"total":3,"items":[{"uid":"be3a1b0fd8090be3867eaf41d302cbd4","name":"All products ","statistic":{"failed":2,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":3}},{"uid":"2fbdb3e0456956ce4d6ac074f2b66ff5","name":"Navbar and Menu Tests","statistic":{"failed":1,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":6}},{"uid":"f944be1fcc4e5d638f069238c7b33328","name":"template spec","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
